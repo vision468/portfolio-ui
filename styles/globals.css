@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply dark:bg-dark-tremor-background bg-tremor-background-subtle
+  }
+  label {
+    @apply md:w-2/3 w-full
+  }
+  input {
+    @apply dark:border-dark-tremor-border border-tremor-border border rounded-lg text-lg p-1 rtl:text-right ltr:text-left mt-1 mb-3 
+  }
+  textarea {
+    @apply dark:border-dark-tremor-border border-tremor-border border rounded-lg text-lg p-1 rtl:text-right ltr:text-left mt-1 mb-3
+  }
+}
+.rubik-light {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.rubik-regular {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-semibold {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.rubik-bold {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,13 +56,7 @@
 
 body {
   margin: 0;
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
 }
 
 html, body, main {
