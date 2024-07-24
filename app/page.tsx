@@ -17,7 +17,7 @@ export default function Home() {
         <HeaderBox
           headerTitle={<>{textContent.name}</>}
           headerDesc={<>{textContent.header_descriptin}</>}
-          headerLogoSrc={""}
+          headerLogoSrc={"/profile.jpg"}
           mainLink={textContent.main_link}
         >
           <ThemeSwitcher
