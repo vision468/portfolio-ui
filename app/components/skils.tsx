@@ -14,7 +14,7 @@ export default function SkilsBox({
   ...props
 }: PropsType) {
   return (
-    <Card className="bg-orange-200 dark:bg-orange-400 box-border">
+    <Card className={`bg-orange-200 dark:bg-orange-400 box-border my-2`}>
       <div>
         <TextBox className="border-b-2 border-b-orange-950 dark:border-b-orange-50">
           <h3>{skils}</h3>
